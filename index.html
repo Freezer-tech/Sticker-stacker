@@ -19,7 +19,13 @@
 <body>
 
   <div class="game-container">
-    
+    <!-- Menu a tendina per cambiare sfondo -->
+    <select id="backgroundSelect">
+      <option value="_4a853c14-782b-4c4c-85cc-0380d50247a9.jpg">Sfondo 1</option>
+      <option value="_60ca75bb-f5e4-4fdf-ac24-14bdec496417.jpg">Sfondo 2</option>
+      <option value="_d8cfe963-215a-4d61-ae68-4c4ac0611cc8.jpg">Sfondo 3</option>
+    </select>
+
     <!-- Titolo gioco e punteggio -->
     <header class="game-panel">
       <h1>Stacker</h1>
@@ -33,9 +39,18 @@
       </div>
     </header>
     <main class="game-board">
+      <!-- Minor Prize -->
+      <div class="prize minor-prize">
+        <span>Minor Prize</span>
+      </div>
+
+      <!-- Major Prize -->
+      <div class="prize major-prize">
+        <span>Major Prize</span>
+      </div>
       <!-- Griglia di gioco -->
       <div class="grid"></div>
-      
+
 
       <!-- Game over -->
       <div class="end-game-screen hidden">
@@ -45,9 +60,9 @@
     </main>
 
     <!-- Stack button -->
-    <button class="btn btn-full stack">Stack</button>
-    <button class="insertCoinBtn">Inserisci una moneta</button>
-  </div>  
+    <button title="premi per giocare" class="btn btn-full stack"></button>
+    <button class="insertCoinBtn nostack">Inserisci una moneta</button>
+  </div>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
