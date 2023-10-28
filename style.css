@@ -214,6 +214,9 @@ h1 {
   background-color: #f1754e;
   border-radius: 8px;
   border: 2px solid rgb(0, 23, 50);
+  background-image: -webkit-radial-gradient(rgba(255, 255, 255, 0.4), red);
+  background-image: -moz-radial-gradient(rgba(255, 255, 255, 0.4), red);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.4), red);
 }
 
 /* # Game over */
